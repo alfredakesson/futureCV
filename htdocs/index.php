@@ -15,9 +15,9 @@
 
 		<div class="container_box"><h2>Jens Gustafsson</h2>
 			<div id="community_container">
-				<div class="small_square">
+				<!--<div class="small_square">
 					<p>F</p>
-				</div>
+				</div>-->
 
 				<div class="small_square_img">
 					<img src="facebook.png" width="25px">
