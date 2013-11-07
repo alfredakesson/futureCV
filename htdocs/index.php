@@ -22,6 +22,13 @@
 				<div class="small_square_img">
 					<img src="facebook.png" width="25px">
 				</div>				
+				<div class="small_square_img">
+					<img src="email.png" width="25px">
+				</div>	
+
+				<div class="small_square_img">
+					<img src="linkedin.png" width="25px">
+				</div>	
 
 			</div>
 
