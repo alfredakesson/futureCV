@@ -4,16 +4,14 @@
 		$handle = new SQLite3("data.db");
 		$array['dbhandle'] = $handle; 
     	$array['query'] = $query;
-    	$result = $dbhandle->query($query);
-    	$i = 0; 
-    	while ($result->columnName($i)) 
+    	$result = $handle->query($query);
+
+    	while ($res = $result->fetchArray(SQLITE3_ASSOC)) 
     	{ 
-        	$columns[ ] = $result->columnName($i); 
-        	$i++; 
+        	$columns[ ] = $res; 
     	} 
     
-    	$resx = $result->fetchArray(SQLITE3_ASSOC); 
-    	return $resx; 
+    	return $columns; 
 	}
-	echo "string";
-	echo queryDB("SELECT * FROM \"test\"");
+	echo "string1";
+	print_r( queryDB("SELECT * FROM \"test\""));
