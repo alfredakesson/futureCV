@@ -11,10 +11,9 @@
    				<li><a href='index.php'>Preview CV</a></li>
 			</ul>
 		</div>
-		
-		<h1>Choose a layout!</h1>
 
-		<div class="container_box"><h2><?php echo getUserByID($_GET["ID"]); ?></h2>
+
+		<div class="container_box"><h2>hej</h2>
 			<div id="community_container">
 
 				<div class="small_square_img">

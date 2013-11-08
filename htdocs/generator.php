@@ -14,28 +14,34 @@
 		<div id="content">
 			<h1>Step 1: <font color="#808080">Choose a layout!</font></h1>
 			<div id="container_box_mini">
-				<div class="box_mini">
-					<div class="square"></div>
-					<div class="square" style="background-color:red"></div>
-					<div class="square" style="background-color:blue"></div>
-					<div class="square" style="background-color:yellow"></div>
-				</div>
-				<div class="box_mini">
-					<div class="rectangle_horizontal" style="background-color:red"></div>
-					<div class="rectangle_horizontal" style="background-color:blue">
 
-						<div class="rectangle_horizontal_inner" style="background-color:yellow"></div>						
+				<a href='#'>
+					<div class="box_mini">
+						<div class="square"></div>
+						<div class="square" style="background-color:red"></div>
+						<div class="square" style="background-color:blue"></div>
+						<div class="square" style="background-color:yellow"></div>
 					</div>
-					<div class="rectangle_horizontal" style="background-color:green"></div>
-				</div>
-				<div class="box_mini">
-					<div class="rectangle_vertical" style="background-color:red"></div>
-					<div class="rectangle_vertical" style="background-color:blue">
-						<div class="rectangle_vertical_inner" style="background-color:purple"></div>						
+				</a>
+				
+				<a href='#'>
+					<div class="box_mini">
+						<div class="rectangle_horizontal" style="background-color:red"></div>
+						<div class="rectangle_horizontal" style="background-color:blue">
+							<div class="rectangle_horizontal_inner" style="background-color:yellow"></div>						
+						</div>
+						<div class="rectangle_horizontal" style="background-color:green"></div>
 					</div>
-					<div class="rectangle_vertical" style="background-color:green"></div>
-				</div>
-
+				</a>
+				<a href='#'>
+					<div class="box_mini">
+						<div class="rectangle_vertical" style="background-color:red"></div>
+						<div class="rectangle_vertical" style="background-color:blue">
+							<div class="rectangle_vertical_inner" style="background-color:purple"></div>						
+						</div>
+						<div class="rectangle_vertical" style="background-color:green"></div>
+					</div>
+				</a>
 
 			</div>
 			
