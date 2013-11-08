@@ -33,6 +33,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', end
 }
 
 
+
+#generator_content
+{
+	position: absolute;
+	width: 100%;
+
+}
+
+
 #top_border ul {
   	list-style: none;
   	margin: 0;

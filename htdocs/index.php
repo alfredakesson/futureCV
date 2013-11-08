@@ -6,12 +6,11 @@
 	<body>
 		<div id="top_border">
 			<ul>
-   				<li><a href='#'>Generate CV</a></li>
-   				<li><a href='#'>Preview CV</a></li>
+   				<li><a href='generator.php'>Generate CV</a></li>
+   				<li><a href='index.php'>Preview CV</a></li>
 			</ul>
 		</div>
 		
-
 
 		<div class="container_box"><h2>Jens Gustafsson</h2>
 			<div id="community_container">
