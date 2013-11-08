@@ -11,28 +11,17 @@
 			</ul>
 		</div>
 		
-		<h1>Choose a layout!</h1>
-
-		<div class="container_box"><h2>Jens Gustafsson</h2>
-			<div id="community_container">
-				<!--<div class="small_square">
-					<p>F</p>
-				</div>-->
-
-				<div class="small_square_img">
-					<img src="facebook.png" width="25px">
-				</div>				
-				<div class="small_square_img">
-					<img src="email.png" width="25px">
-				</div>	
-
-				<div class="small_square_img">
-					<img src="linkedin.png" width="25px">
-				</div>	
-
+		<div id="content">
+			<h1>Step 1: <font color="#808080">Choose a layout!</font></h1>
+			<div class="container_box">
 			</div>
 
 
+
+		</div>
+		
+
+		
 
 <!--
 Arbetslivserfarenhet
@@ -41,7 +30,6 @@ Utbildning
 Top5-"VALFRITT"  <<Programmeringsspråk
 -->
 
-		</div>
 
 
 		

@@ -34,10 +34,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', end
 
 
 
-#generator_content
+#content
 {
 	position: absolute;
 	width: 100%;
+	left:0px;
+	top: 50px;
+}
+#content h1
+{
+	color:#A73E0F;
+	text-align: center;
+	padding:15px 0 0 0;
+
 
 }
 
@@ -128,7 +137,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', end
 
 .container_box
 {
-	top:150px;
+	top:100px;
 	position:relative;
 	background-color:#FFFFFF;
 	color:black;
