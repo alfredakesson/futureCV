@@ -51,15 +51,16 @@
 				
 
 					<form name="input" action="cratePage.php" method="post">
-				<div class="form_div" style= "background-color:blue;">
-					<p>Skriv Namn:</p>
-					<input type="text" name="name">
-				</div>
-				<div class="form_div" style= "background-color:green;">
+						<div class="form_div" style= "background-color:#541116; color:white;">
+						<p>Please, enter your full name:</p>
+						<input type="text" name="name">
+					</div>
+					
+					<div class="form_div" style= "background-color:green;">
 						<p>Skriv text:</p>
 						<textarea rows="4" cols="50" name="text1">
 						</textarea>
-					</div>
+
 						<p>Välj bakgrundsfärg:</p>
 						<select name="color1">
   							<option>Azure</option>
@@ -69,47 +70,53 @@
   							<option>Green</option>
   							<option>Indigo</option>
 						</select>
+					</div>
+				
+					<div class="form_div" style= "background-color:yellow;">
+						<p>Skriv text:</p>
+						<textarea rows="4" cols="50" name="text2">
+						</textarea>
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color2">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
+						</select>
+					</div>
 
-					<p>Skriv text:</p>
-					<textarea rows="4" cols="50" name="text2">
-					</textarea>
-					<p>Välj bakgrundsfärg:</p>
-					<select name="color2">
-  						<option>Azure</option>
-  						<option>Coral</option>
-  						<option>Cyan</option>
-  						<option>Gold</option>
-  						<option>Green</option>
-  						<option>Indigo</option>
-					</select>
-
-					<p>Skriv text:</p>
-					<textarea rows="4" cols="50" name="text3">
-					</textarea>
-					<p>Välj bakgrundsfärg:</p>
-					<select name="color3">
-  						<option>Azure</option>
-  						<option>Coral</option>
-  						<option>Cyan</option>
-  						<option>Gold</option>
-  						<option>Green</option>
-  						<option>Indigo</option>
-					</select>
-
-					<p>Skriv text:</p>
-					<textarea rows="4" cols="50" name="text4">
-					</textarea>
-					<p>Välj bakgrundsfärg:</p>
-					<select name="color4">
-  						<option>Azure</option>
-  						<option>Coral</option>
-  						<option>Cyan</option>
-  						<option>Gold</option>
-  						<option>Green</option>
-  						<option>Indigo</option>
-					</select>
-
-					<input type="submit" value="Skicka">
+					<div class="form_div" style= "background-color:red;">
+						<p>Skriv text:</p>
+						<textarea rows="4" cols="50" name="text3">
+						</textarea>
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color3">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
+						</select>
+					</div>
+	
+					<div class="form_div" style= "background-color:blue;">
+						<p>Skriv text:</p>
+						<textarea rows="4" cols="50" name="text4">
+						</textarea>
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color4">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
+						</select>
+						<input type="submit" value="Skicka">
+					</div>
 				</form>
 			</div>
 		</div>
