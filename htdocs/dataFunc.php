@@ -1,4 +1,5 @@
 <?php
+    
 	function queryDB($query)
 	{
 		$handle = new SQLite3("data.db");
@@ -10,8 +11,12 @@
     	{ 
         	$columns[ ] = $res; 
     	} 
-    
     	return $columns; 
 	}
-	//echo "string1";
+
+    function getUserByID($ID)
+    {   
+        return queryDB("SELECT * FROM \"Users\" WHERE ID = \"$ID\"")[0]["Name"];
+    }
+	//echo getUserByID(1);
 	//print_r( queryDB("SELECT * FROM \"test\""));
