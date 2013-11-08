@@ -13,5 +13,5 @@
     
     	return $columns; 
 	}
-	echo "string1";
-	print_r( queryDB("SELECT * FROM \"test\""));
+	//echo "string1";
+	//print_r( queryDB("SELECT * FROM \"test\""));
