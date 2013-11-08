@@ -85,8 +85,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', end
 
 #community_container
 {
-	position: relative;
-	top: 416px;
+	position: absolute;
+	top: 456px;
 	padding-top:5px;
 	right: -5px;
 	height: 30px;
@@ -191,10 +191,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', end
 }
 
 .square 
-{
+{	
+	text-shadow: 0px 1px 2px #bbb;
 	position:relative;
 	width: 90px;
 	height: 90px;
+	background-color:green;
+	float:left;
+}
+
+.squareBig 
+{
+	color: #000000;
+	font-size: 16px;
+	padding: 10px;
+	position:relative;
+	width: 230px;
+	height: 230px;
 	background-color:green;
 	float:left;
 }
