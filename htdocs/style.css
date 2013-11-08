@@ -28,6 +28,21 @@ background: linear-gradient(to bottom,  rgba(168,112,112,1) 0%,rgba(162,104,104,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', endColorstr='#a46a6a',GradientType=0 ); /* IE6-9 */
 
 
+select option {
+    margin:40px;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+}
+
+select option[val="1"]{
+    background: rgba(100,100,100,0.3);
+}
+
+select option[val="2"]{
+    background: rgba(200,200,200,0.3);
+}
+
 
 
 }
@@ -50,14 +65,24 @@ input {
     border:1px solid #CCC;
 }
 
+textarea {
+    width: 380px;
+    height: 70px;
+    border-radius: 1em;
+    border: 1px solid #000; /* everything up to and including this line
+                               are aesthetics, adjust to taste */
+    outline: none; /* removes the default outline */
+    resize: none; /* prevents the user-resizing, adjust to taste */
+}
+
 #form_box
 {
-	background-color:white;
+	background-color:#541116;
 	border-width:10px;
 	border-style:solid;
 	border-radius:10px;
 	border-color:#541116;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 40px auto;
 	padding: 0px 0 0px 0;
 	width: 500px;
 
@@ -68,6 +93,7 @@ input {
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	text-align:center;
 	
 }
 
@@ -200,6 +226,18 @@ input {
 	width:750px;
 	margin: 25px auto;
 	height: 250px;
+}
+
+.color_box
+{
+	background-color: purple;
+	height:10px;
+	width:10px;
+	float:left;
+	margin-left: 5px;
+	border-style:solid;
+	border-color:black;
+	border-width: 1px;
 }
 
 

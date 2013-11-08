@@ -15,7 +15,7 @@
 			<h1 style="margin-top: 30px; margin-bottom:50px">Step 1: <font color="#808080">Choose a layout!</font></h1>
 			<div id="container_box_mini">
 
-				<a href=#form_box>
+				<a href='#'>
 					<div class="box_mini">
 						<div class="square"></div>
 						<div class="square" style="background-color:red"></div>
@@ -24,7 +24,7 @@
 					</div>
 				</a>
 				
-				<a href=#form_box>
+				<a href='#'>
 					<div class="box_mini">
 						<div class="rectangle_horizontal" style="background-color:red"></div>
 						<div class="rectangle_horizontal" style="background-color:blue">
@@ -33,7 +33,7 @@
 						<div class="rectangle_horizontal" style="background-color:green"></div>
 					</div>
 				</a>
-				<a href=#form_box>
+				<a href='#'>
 					<div class="box_mini">
 						<div class="rectangle_vertical" style="background-color:red"></div>
 						<div class="rectangle_vertical" style="background-color:blue">
@@ -60,55 +60,64 @@
 						
 						<textarea rows="4" cols="50" name="text1">
 						</textarea>
-						<p></p>
 
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color1">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
 						</select>
-						<div class="color_box" style="background-color:green"></div>
-						<div class="color_box" style="background-color:yellow;"></div>
-						<div class="color_box" style="background-color:red;"></div>
-						<div class="color_box" style="background-color:blue;"></div>
 					</div>
 				
 					<div class="form_div" style= "background-color:yellow;">
-						
+						<p>Skriv text:</p>
 						<textarea rows="4" cols="50" name="text2">
 						</textarea>
-						<p></p>
-
-
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color2">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
 						</select>
-						<div class="color_box" style="background-color:green"></div>
-						<div class="color_box" style="background-color:yellow;"></div>
-						<div class="color_box" style="background-color:red;"></div>
-						<div class="color_box" style="background-color:blue;"></div>
 					</div>
 
 					<div class="form_div" style= "background-color:red;">
-						
+						<p>Skriv text:</p>
 						<textarea rows="4" cols="50" name="text3">
 						</textarea>
-						<p></p>
-
-						<div class="color_box" style="background-color:green"></div>
-						<div class="color_box" style="background-color:yellow;"></div>
-						<div class="color_box" style="background-color:red;"></div>
-						<div class="color_box" style="background-color:blue;"></div>
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color3">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
+						</select>
 					</div>
 	
 					<div class="form_div" style= "background-color:blue;">
-						
+						<p>Skriv text:</p>
 						<textarea rows="4" cols="50" name="text4">
 						</textarea>
-						<p></p>
-
-						<p></p>
-						<div class="color_box" style="background-color:green"></div>
-						<div class="color_box" style="background-color:yellow;"></div>
-						<div class="color_box" style="background-color:red;"></div>
-						<div class="color_box" style="background-color:blue;"></div>	
+						<p>Välj bakgrundsfärg:</p>
+						<select name="color4">
+  							<option>Azure</option>
+  							<option>Coral</option>
+  							<option>Cyan</option>
+  							<option>Gold</option>
+  							<option>Green</option>
+  							<option>Indigo</option>
+						</select>
+						<input type="submit" value="Skicka">
 					</div>
 				</form>
-				<div style="text-align:center; margin-top:15px"><input type="submit" value="Generate CV"></div>
 			</div>
 		</div>
 		
