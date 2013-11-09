@@ -17,7 +17,15 @@
 		
 
 		<div id="content">
-			<div class="container_box"><h2>Jens Gustafsson</h2>
+
+				<h1 class="bnr" style="color:white">Jens Gustafsson<span><b></b><b></b><i></i><i></i></span></h1>
+
+
+
+
+
+		</div>
+			<div class="container_box" style="top: 200px">
 				<div id="community_container">
 				<!--<div class="small_square">
 					<p>F</p>

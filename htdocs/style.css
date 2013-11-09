@@ -3,6 +3,7 @@ body
 background-color:#EAEBE5;
 font-size: 12px;
 font-family: Verdana, Geneva, sans-serif;
+color:white;
 }
 
 
@@ -176,13 +177,14 @@ textarea {
 }
 
 
+
 .container_box
 {
 	text-shadow: 0px 1px 2px #bbb;
 	color: #111111;
 	font-family: Helvetica;
 	font-weight: lighter;
-	top:100px;
+	top:110px;
 	position:relative;
 	background-color:#FFFFFF;
 	color:black;
@@ -350,45 +352,107 @@ textarea {
 
 
 
-h2
-{
+#burst-12 {
 	position: relative;
-	width: 112%;
-	font-size: 1.1em;
-	font-weight: bold;
-	top: 10px;
-	padding: 6px 0px 6px 20px;
-	margin: 0px 0px 10px -30px;
-	color: #555;
-	background-color: #F2C84B;
-	text-shadow: 0px 1px 2px #bbb;
-	-webkit-box-shadow: 0px 2px 4px #888;
-	-moz-box-shadow: 0px 2px 4px #888;
-	box-shadow: 0px 2px 4px #888;
+	top:100px;
+	margin: auto;
+	margin-bottom:75px;
+    background: red;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 280px;
+    width: 280px;
+    background: red;
+}
+#burst-12:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
 }
 
-h2:before
-{
-	content: ' ';
-	position: absolute;
-	width: 30px;
-	height: 0;
-	left: -30px;
-	top: 12px;
-	border-width: 20px 10px;
-	border-style: solid;
-	border-color: #F2C84B #F2C84B #F2C84B transparent;
-}
 
-h2:after
-{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 0px;
-	top: 100%;
-	border-width: 5px 10px;
-	border-style: solid;
-	border-color: #BF820F #BF820F transparent transparent;
+
+.bnr, .bnr span {
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    width: 12em;
+}
+.bnr {
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	top:112px;
+	z-index:-1;
+    background: #541116; /*MAIN COLOR*/
+    color: white;
+    font-size: 	16px; /* Change size here and the whole banner scales up or down. */
+    padding-bottom:50px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+.bnr span {
+    position: absolute;
+    top: .75em;
+}
+.bnr b, .bnr i {
+    border-top: 1.5em solid #8B796D; /*UPPER*/
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.bnr b {
+    border-left: 1.5em solid transparent;
+    left: -1.5em;
+}
+.bnr i {
+    border-right: 1.5em solid transparent;
+    right: -1.5em;
+}
+.bnr b + b,
+.bnr i + i {
+    border-bottom: 1.5em solid #8B796D;
+    border-top: none;
+    top: 1.5em;
+}
+.bnr b:after, .bnr b + b:after,
+.bnr i:after, .bnr i + i:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: .75em;
+}
+.bnr b:after,
+.bnr i:after {
+    background: #4DFFFF;
+    height: .25em;
+    width: .25em;
+}
+.bnr b + b:after,
+.bnr i + i:after {
+    border-top: .75em solid #488;
+    height:0;
+    width:0;
+}
+.bnr b + b:after {
+    border-left: .75em solid transparent;
+}
+.bnr i + i:after {
+    border-right: .75em solid transparent;
+    left: -.75em;
 }
