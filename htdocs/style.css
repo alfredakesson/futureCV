@@ -251,7 +251,7 @@ textarea {
 	border-width:10px;
 	border-style:solid;
 	border-radius:10px;
-	border-color:#541116;
+	border-color:white;
 	padding-bottom: 0;
 	-webkit-box-shadow: 5px 3px 15px rgba(50, 50, 50, 0.4);
 	-moz-box-shadow:    5px 3px 15px rgba(50, 50, 50, 0.4);
@@ -261,6 +261,7 @@ textarea {
 	margin-right:25px;
 
 }
+
 
 .verticalLine {
     border-left: solid;

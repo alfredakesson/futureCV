@@ -1,3 +1,15 @@
+<?php	
+	session_start();
+	
+	if (!isset($_SESSION[’ServGen’])) {
+		session_destroy();
+		session_start();
+	}
+	session_regenerate_id();
+	$_SESSION[’ServGen’] = TRUE;
+	require 'php_fnc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
