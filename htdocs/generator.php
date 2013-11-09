@@ -87,6 +87,11 @@
 				text = text.replace(/(\r\n|\n|\r)/gm,"");
 				createCookie('text'.concat(arg),text,1);
 			}
+			function changeName () {
+				var text = document.getElementById('name').value;
+				text = text.replace(/(\r\n|\n|\r)/gm,"");
+				createCookie('name',text,1);
+			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta charset="utf-8">
@@ -140,7 +145,7 @@
 					<form name="input" action="cratePage.php" method="post">
 						<div class="form_div" style= "background-color:#541116; color:white;">
 						<p>Please, enter your full name:</p>
-						<input type="text" name="name">
+						<input id="name" type="text" name="name" onchange="changeName();" value="<?php if(isset($_COOKIE["name"])){echo $_COOKIE["name"];}else{echo "Name";} ?>">
 					</div>
 					
 					<div id="color_1" class="form_div" style= "background-color:<?php echo $color1; ?>">
