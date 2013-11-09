@@ -23,10 +23,26 @@ if($_COOKIE['layout'] == 'layout_1'){
 	$file = file_get_contents("tempHorzSizeBox.html");
 }
 $file = str_replace("%%name%%",$_COOKIE["name"],$file);
-$file = str_replace("%%text1%%",$_COOKIE["text1"],$file);
-$file = str_replace("%%text2%%",$_COOKIE["text2"],$file);
-$file = str_replace("%%text3%%",$_COOKIE["text3"],$file);
-$file = str_replace("%%text4%%",$_COOKIE["text4"],$file);
+if (isset($_COOKIE["text1"])) {
+	$file = str_replace("%%text1%%",$_COOKIE["text1"],$file);
+}else{
+	$file = str_replace("%%text1%%","",$file);
+}
+if (isset($_COOKIE["text2"])) {
+	$file = str_replace("%%text2%%",$_COOKIE["text2"],$file);
+}else{
+	$file = str_replace("%%text2%%","",$file);
+}
+if (isset($_COOKIE["text3"])) {
+	$file = str_replace("%%text3%%",$_COOKIE["text3"],$file);
+}else{
+	$file = str_replace("%%text3%%","",$file);
+}
+if (isset($_COOKIE["text4"])) {
+	$file = str_replace("%%text4%%",$_COOKIE["text4"],$file);
+}else{
+	$file = str_replace("%%text4%%","",$file);
+}
 $file = str_replace("%%color1%%",$_COOKIE['color_1'],$file);
 $file = str_replace("%%color2%%",$_COOKIE['color_2'],$file);
 $file = str_replace("%%color3%%",$_COOKIE['color_3'],$file);

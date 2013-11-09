@@ -84,10 +84,12 @@
 			}
 			function changeText (arg) {
 				var text = document.getElementById('text'.concat(arg)).value;
+				text = text.replace(/(\r\n|\n|\r)/gm,"");
 				createCookie('text'.concat(arg),text,1);
 			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
 	</head>
 	<body>
 		<div id="top_border">
