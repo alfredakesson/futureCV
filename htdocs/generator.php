@@ -131,7 +131,7 @@
 						<div id="color_22" class="rectangle_horizontal" style="background-color:<?php echo $_COOKIE['color_2']; ?>">
 							<div id="color_32" class="rectangle_horizontal_inner" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>						
 						</div>
-						<div id="color_42" class="rectangle_horizontal" style="background-color:<?php echo $color4; ?>"></div>
+						<div id="color_42" class="rectangle_horizontal" style="background-color:<?php echo $_COOKIE['color_4']; ?>"></div>
 					</div>
 				
 					<div id="box_mini_id_3" onClick="changeColor3();" class="box_mini" style="<?php if(strcmp($_COOKIE['layout'], 'layout_3') == 0){ echo 'border-color: #541116;';} else { echo 'border-color: white;';}?>">
