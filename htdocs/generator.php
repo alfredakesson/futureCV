@@ -92,6 +92,14 @@
 				text = text.replace(/(\r\n|\n|\r)/gm,"");
 				createCookie('name',text,1);
 			}
+			function showUpload (arg){
+				if(document.getElementById('useBG'.concat(arg)).checked){
+					document.getElementById('upload'.concat(arg)).style.display="block";
+				}else{
+					document.getElementById('upload'.concat(arg)).style.display="none";
+					createCookie('upload'.concat(arg),'none',1);
+				}
+			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta charset="utf-8">
@@ -142,7 +150,6 @@
 			<div id="form_box">
 				
 
-					<form name="input" action="cratePage.php" method="post">
 						<div class="form_div" style= "background-color:#541116; color:white;">
 						<p>Please, enter your full name:</p>
 						<input id="name" type="text" name="name" onchange="changeName();" value="<?php if(isset($_COOKIE["name"])){echo $_COOKIE["name"];}else{echo "Name";} ?>">
@@ -152,25 +159,40 @@
 						
 						<textarea id="text1" rows="4" cols="50" name="text1" onchange="changeText(1);"><?php if(isset($_COOKIE["text1"])){echo $_COOKIE["text1"];} ?></textarea>
 						<p></p>
+						<form id="upload1" action="generator.php" method="post"
+						enctype="multipart/form-data" style = "display:none;">
+						<input type="hidden" name="boxNbr" value="1"/>
+						<label for="file">Choose background-image if you want: </label>
+						<input type="file" name="file" id="file"><br>
+						<input type="submit" name="submit" value="Upload">
+						</form>
 
-						</select>
+						
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1'');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
+						Background-image: <input id="useBG1" type="checkbox" name="useBG1" value="useBG1" class="color_box" onClick="showUpload(1);">
+
 					</div>
 				
 					<div id="color_2" class="form_div" style= "background-color:<?php echo $_COOKIE['color_2']; ?>">
 						
 						<textarea id="text2" rows="4" cols="50" name="text2" onchange="changeText(2);"><?php if(isset($_COOKIE["text2"])){echo $_COOKIE["text2"];} ?></textarea>
 						<p></p>
+						<form id="upload2" action="generator.php" method="post"
+						enctype="multipart/form-data" style = "display:none;">
+						<input type="hidden" name="boxNbr" value="2"/>
+						<label for="file">Choose background-image if you want: </label>
+						<input type="file" name="file" id="file"><br>
+						<input type="submit" name="submit" value="Upload">
+						</form>
 
-
-						</select>
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
-						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>	
+						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
+						Background-image: <input id="useBG2" type="checkbox" name="useBG2" value="useBG2" class="color_box" onClick="showUpload(2);">
 					</div>
 
 					<div id="color_3" class="form_div" style= "background-color:<?php echo $_COOKIE['color_3']; ?>">
@@ -178,10 +200,20 @@
 						<textarea id="text3" rows="4" cols="50" name="text3" onchange="changeText(3);"><?php if(isset($_COOKIE["text3"])){echo $_COOKIE["text3"];} ?></textarea>
 						<p></p>
 
+						<form id="upload3" action="generator.php" method="post"
+						enctype="multipart/form-data" style = "display:none;">
+						<input type="hidden" name="boxNbr" value="3"/>
+						<label for="file">Choose background-image if you want: </label>
+						<input type="file" name="file" id="file"><br>
+						<input type="submit" name="submit" value="Upload">
+						</form>
+
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
+						Background-image: <input id="useBG3" type="checkbox" name="useBG3" value="useBG3" class="color_box" onClick="showUpload(3);">
+
 					</div>
 	
 					<div id="color_4" class="form_div" style= "background-color:<?php echo $_COOKIE['color_4']; ?>">
@@ -191,12 +223,21 @@
 
 						<p></p>
 
+						<form id="upload4" action="generator.php" method="post"
+						enctype="multipart/form-data" style = "display:none;">
+						<input type="hidden" name="boxNbr" value="4"/>
+						<label for="file">Choose background-image if you want: </label>
+						<input type="file" name="file" id="file"><br>
+						<input type="submit" name="submit" value="Upload">
+						</form>
+
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
-						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>	
+						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
+						Background-image: <input id="useBG4" type="checkbox" name="useBG4" value="useBG4" class="color_box" onClick="showUpload(4);">
+	
 					</div>
-				</form>
 			</div>
 		</div>
 		
