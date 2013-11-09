@@ -97,10 +97,10 @@
 
 		
 					<div id="box_mini_id_1" class="box_mini" onClick="changeColor1();">
-						<div id="color_11" class="square" style="background-color:<?php echo $color1; ?>"></div>
-						<div id="color_21" class="square" style="background-color:<?php echo $color2; ?>"></div>
-						<div id="color_31" class="square" style="background-color:<?php echo $color3; ?>"></div>
-						<div id="color_41" class="square" style="background-color:<?php echo $color4; ?>"></div>
+						<div id="color_11" class="square" style="background-color:<?php echo $_COOKIE['color_1']; ?>"></div>
+						<div id="color_21" class="square" style="background-color:<?php echo $_COOKIE['color_2']; ?>"></div>
+						<div id="color_31" class="square" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>
+						<div id="color_41" class="square" style="background-color:<?php echo $_COOKIE['color_4'] ?>"></div>
 					</div>
 				
 				
