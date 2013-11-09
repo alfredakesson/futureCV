@@ -80,6 +80,10 @@
 				document.getElementById('box_mini_id_3').style.borderColor="#541116";
 				createCookie('layout','layout_3',1);
 			}
+			function changeText (arg) {
+				var text = document.getElementById('text'.concat(arg)).value;
+				createCookie('text'.concat(arg),text,1);
+			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -137,8 +141,7 @@
 					
 					<div id="color_1" class="form_div" style= "background-color:<?php echo $color1; ?>">
 						
-						<textarea rows="4" cols="50" name="text1">
-						</textarea>
+						<textarea id="text1" rows="4" cols="50" name="text1" onchange="changeText(1);"><?php if(isset($_COOKIE["text1"])){echo $_COOKIE["text1"];} ?></textarea>
 						<p></p>
 
 						</select>
@@ -150,8 +153,7 @@
 				
 					<div id="color_2" class="form_div" style= "background-color:<?php echo $color2; ?>">
 						
-						<textarea rows="4" cols="50" name="text2">
-						</textarea>
+						<textarea id="text2" rows="4" cols="50" name="text2" onchange="changeText(2);"><?php if(isset($_COOKIE["text2"])){echo $_COOKIE["text2"];} ?></textarea>
 						<p></p>
 
 
@@ -164,8 +166,7 @@
 
 					<div id="color_3" class="form_div" style= "background-color:<?php echo $color3; ?>">
 						
-						<textarea rows="4" cols="50" name="text3">
-						</textarea>
+						<textarea id="text3" rows="4" cols="50" name="text3" onchange="changeText(3);"><?php if(isset($_COOKIE["text3"])){echo $_COOKIE["text3"];} ?></textarea>
 						<p></p>
 
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
@@ -176,8 +177,7 @@
 	
 					<div id="color_4" class="form_div" style= "background-color:<?php echo $color4; ?>">
 						
-						<textarea rows="4" cols="50" name="text4">
-						</textarea>
+						<textarea id="text4"rows="4" cols="50" name="text4" onchange="changeText(4);"><?php if(isset($_COOKIE["text4"])){echo $_COOKIE["text4"];} ?></textarea>
 						<p></p>
 
 						<p></p>
