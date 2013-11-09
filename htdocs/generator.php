@@ -34,22 +34,24 @@
 				document.getElementById(arg2.concat(1)).style.backgroundColor=arg1;
 				document.getElementById(arg2.concat(2)).style.backgroundColor=arg1;
 				document.getElementById(arg2.concat(3)).style.backgroundColor=arg1;
-				document.getElementById(arg2.concat(4)).style.backgroundColor=arg1;
-			
+				document.getElementById(arg2.concat(4)).style.backgroundColor=arg1;			
 			}
 
-
+			/* CHANGE LAYOUT!!*/
 			function changeColor1(){
 				changeColor();
 				document.getElementById('box_mini_id_1').style.borderColor="#541116";
+				$_SESSION['layout']='tempEqSizeBox.html';
 			}
 			function changeColor2(){
 				changeColor();
 				document.getElementById('box_mini_id_2').style.borderColor="#541116";
+				$_SESSION['layout']='tempHorzSizeBox';				
 			}
 			function changeColor3(){
 				changeColor();
 				document.getElementById('box_mini_id_3').style.borderColor="#541116";
+				$_SESSION['layout']='tempHorzSizeBox';				
 			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -58,7 +60,7 @@
 		<div id="top_border">
 			<ul>
    				<li><a href='generator.php'>Generate CV</a></li>
-   				<li><a href='index.php'>Preview CV</a></li>
+   				<li><a href='cratePage.php'>Preview CV</a></li>
 			</ul>
 		</div>
 		
@@ -159,7 +161,6 @@
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>	
 					</div>
 				</form>
-				<div style="text-align:center; margin-top:15px"><input type="submit" value="Generate CV"></div>
 			</div>
 		</div>
 		
