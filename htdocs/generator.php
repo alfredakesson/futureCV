@@ -109,7 +109,7 @@
 			<div id="container_box_mini">
 
 		
-					<div id="box_mini_id_1" class="box_mini" onClick="changeColor1();">
+					<div id="box_mini_id_1" class="box_mini" onClick="changeColor1();" style="<?php if(strcmp($_COOKIE['layout'], 'layout_1') == 0){ echo 'border-color: #541116;';} else { echo 'border-color: white;';}?>">
 						<div id="color_11" class="square" style="background-color:<?php echo $_COOKIE['color_1']; ?>"></div>
 						<div id="color_21" class="square" style="background-color:<?php echo $_COOKIE['color_2']; ?>"></div>
 						<div id="color_31" class="square" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>
@@ -118,18 +118,18 @@
 				
 				
 				
-					<div id="box_mini_id_2" onClick="changeColor2();" class="box_mini">
-						<div id="color_12" class="rectangle_horizontal" style="background-color:<?php echo $color1; ?>"></div>
-						<div id="color_22" class="rectangle_horizontal" style="background-color:<?php echo $color2; ?>">
-							<div id="color_32" class="rectangle_horizontal_inner" style="background-color:<?php echo $color3; ?>"></div>						
+					<div id="box_mini_id_2" onClick="changeColor2();" class="box_mini" style="<?php if(strcmp($_COOKIE['layout'], 'layout_2') == 0){ echo 'border-color: #541116;';} else { echo 'border-color: white;';}?>">
+						<div id="color_12" class="rectangle_horizontal" style="background-color:<?php echo $_COOKIE['color_1']; ?>"></div>
+						<div id="color_22" class="rectangle_horizontal" style="background-color:<?php echo $_COOKIE['color_2']; ?>">
+							<div id="color_32" class="rectangle_horizontal_inner" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>						
 						</div>
 						<div id="color_42" class="rectangle_horizontal" style="background-color:<?php echo $color4; ?>"></div>
 					</div>
 				
-					<div id="box_mini_id_3" onClick="changeColor3();" class="box_mini">
-						<div id="color_13" class="rectangle_vertical" style="background-color:<?php echo $color1; ?>" ></div>
-						<div id="color_23" class="rectangle_vertical" style="background-color:<?php echo $color2; ?>">
-							<div id="color_33" class="rectangle_vertical_inner" style="background-color:<?php echo $color3; ?>"></div>						
+					<div id="box_mini_id_3" onClick="changeColor3();" class="box_mini" style="<?php if(strcmp($_COOKIE['layout'], 'layout_3') == 0){ echo 'border-color: #541116;';} else { echo 'border-color: white;';}?>">
+						<div id="color_13" class="rectangle_vertical" style="background-color:<?php echo $_COOKIE['color_1']; ?>" ></div>
+						<div id="color_23" class="rectangle_vertical" style="background-color:<?php echo $_COOKIE['color_2']; ?>">
+							<div id="color_33" class="rectangle_vertical_inner" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>						
 						</div>
 						<div id="color_43" class="rectangle_vertical" style="background-color:<?php echo $color4; ?>"></div>
 					</div>

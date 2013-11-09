@@ -6,17 +6,16 @@
 	$color3 = '#7AA5B3';
 	$color4 = '#FEADAC';
 
-
-	if(!isset($_COOKIE['color1'])){
+	if(!isset($_COOKIE['color_1'])){
 		$_COOKIE['color_1'] = $color1;
 	}
-	if(!isset($_COOKIE['color2'])){
+	if(!isset($_COOKIE['color_2'])){
 		$_COOKIE['color_2'] = $color2;
 	}
-	if(!isset($_COOKIE['color3'])){
+	if(!isset($_COOKIE['color_3'])){
 		$_COOKIE['color_3'] = $color3;
 	}
-	if(!isset($_COOKIE['color4'])){
+	if(!isset($_COOKIE['color_4'])){
 		$_COOKIE['color_4'] = $color4;
 	}
 ?>

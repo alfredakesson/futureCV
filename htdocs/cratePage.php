@@ -1,18 +1,6 @@
 <?php
 	require 'php_fnc.php';
-	
-if(!isset($_COOKIE['color_1'])){
-	$_COOKIE['color_1'] = $color1;	
-}
-if(!isset($_COOKIE['color_2'])){
-	$_COOKIE['color_1'] = $color2;
-}
-if(!isset($_COOKIE['color_3'])){
-	$_COOKIE['color_1'] = $color3;
-}
-if(!isset($_COOKIE['color_4'])){
-	$_COOKIE['color_1'] = $color4;
-}
+
 
 
 if($_COOKIE['layout'] == 'layout_1'){
