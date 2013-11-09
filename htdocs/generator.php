@@ -65,17 +65,17 @@
 			function changeColor1(){
 				changeColor();
 				document.getElementById('box_mini_id_1').style.borderColor="#541116";
-				$_SESSION['layout']='tempEqSizeBox.html';
+
 			}
 			function changeColor2(){
 				changeColor();
 				document.getElementById('box_mini_id_2').style.borderColor="#541116";
-				$_SESSION['layout']='tempHorzSizeBox';				
+
 			}
 			function changeColor3(){
 				changeColor();
 				document.getElementById('box_mini_id_3').style.borderColor="#541116";
-				$_SESSION['layout']='tempHorzSizeBox';				
+
 			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">

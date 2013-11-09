@@ -18,3 +18,6 @@ if (false) {
 	exit;
 }
 echo $file;
+
+
+?>
