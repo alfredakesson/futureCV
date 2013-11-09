@@ -43,6 +43,30 @@ if (isset($_COOKIE["text4"])) {
 }else{
 	$file = str_replace("%%text4%%","",$file);
 }
+
+
+if (isset($_COOKIE["upload1"])&& $_COOKIE["upload1"] != "none") {
+	$file = str_replace("%%upload1%%","upload/".$_COOKIE["upload1"],$file);
+}else{
+	$file = str_replace("%%upload1%%","",$file);
+}
+if (isset($_COOKIE["upload2"])&& $_COOKIE["upload2"] != "none") {
+	$file = str_replace("%%upload2%%","upload/".$_COOKIE["upload2"],$file);
+}else{
+	$file = str_replace("%%upload2%%","",$file);
+}
+if (isset($_COOKIE["upload3"])&& $_COOKIE["upload3"] != "none") {
+	$file = str_replace("%%upload3%%","upload/".$_COOKIE["upload3"],$file);
+}else{
+	$file = str_replace("%%upload3%%","",$file);
+}
+if (isset($_COOKIE["upload4"]) && $_COOKIE["upload4"] != "none") {
+	$file = str_replace("%%upload4%%","upload/".$_COOKIE["upload4"],$file);
+}else{
+	$file = str_replace("%%upload4%%","",$file);
+}
+
+
 $file = str_replace("%%color1%%",$_COOKIE['color_1'],$file);
 $file = str_replace("%%color2%%",$_COOKIE['color_2'],$file);
 $file = str_replace("%%color3%%",$_COOKIE['color_3'],$file);
