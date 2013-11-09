@@ -139,7 +139,7 @@
 						<div id="color_23" class="rectangle_vertical" style="background-color:<?php echo $_COOKIE['color_2']; ?>">
 							<div id="color_33" class="rectangle_vertical_inner" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>						
 						</div>
-						<div id="color_43" class="rectangle_vertical" style="background-color:<?php echo $color4; ?>"></div>
+						<div id="color_43" class="rectangle_vertical" style="background-color:<?php echo $_COOKIE['color_4']; ?>"></div>
 					</div>
 				
 
