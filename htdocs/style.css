@@ -28,31 +28,8 @@ background: linear-gradient(to bottom,  rgba(168,112,112,1) 0%,rgba(162,104,104,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', endColorstr='#a46a6a',GradientType=0 ); /* IE6-9 */
 
 
-select option {
-    margin:40px;
-    background: rgba(0,0,0,0.3);
-    color:#fff;
-    text-shadow:0 1px 0 rgba(0,0,0,0.4);
 }
 
-select option[val="1"]{
-    background: rgba(100,100,100,0.3);
-}
-
-select option[val="2"]{
-    background: rgba(200,200,200,0.3);
-}
-
-
-
-}
-label {
-    width:60px;
-    float:left;
-    font-size:12px;
-    line-height:24px;
-    font-weight:bold;
-}
 
 input {
     width:300px;
@@ -262,12 +239,7 @@ textarea {
 
 }
 
-
-.verticalLine {
-    border-left: solid;
-    border-width: 10px;
-}
-
+/* This is used in generator.php to create the different box-layouts...*/
 .square 
 {	
 	text-shadow: 0px 1px 2px #bbb;
@@ -276,6 +248,11 @@ textarea {
 	height: 90px;
 	background-color:green;
 	float:left;
+	
+/*WE MIGHT ADD THIS LATER*/
+	/*border-color:1px;
+	border-style:solid;
+	border-color:white;*/
 }
 
 .squareBig 
@@ -325,7 +302,7 @@ textarea {
 	background-color:green;
 	float:left;
 }
-
+/* End of the box-css */
 
 
 h2
