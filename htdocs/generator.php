@@ -54,28 +54,31 @@
 			}
 
 			function changeColorOnBox(arg1, arg2, arg3){
+				createCookie(arg2, arg1, 1);
 				document.getElementById(arg2).style.backgroundColor=arg1;
 				document.getElementById(arg2.concat(1)).style.backgroundColor=arg1;
 				document.getElementById(arg2.concat(2)).style.backgroundColor=arg1;
 				document.getElementById(arg2.concat(3)).style.backgroundColor=arg1;
-				document.getElementById(arg2.concat(4)).style.backgroundColor=arg1;			
+				document.getElementById(arg2.concat(4)).style.backgroundColor=arg1;	
+				
 			}
 
 			/* CHANGE LAYOUT!!*/
 			function changeColor1(){
 				changeColor();
 				document.getElementById('box_mini_id_1').style.borderColor="#541116";
+				createCookie('layout','layout_1',1);
 
 			}
 			function changeColor2(){
 				changeColor();
 				document.getElementById('box_mini_id_2').style.borderColor="#541116";
-
+				createCookie('layout','layout_2',1);
 			}
 			function changeColor3(){
 				changeColor();
 				document.getElementById('box_mini_id_3').style.borderColor="#541116";
-
+				createCookie('layout','layout_3',1);
 			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
