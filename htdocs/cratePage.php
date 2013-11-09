@@ -1,4 +1,6 @@
 <?php
+	require 'php_fnc.php';
+	
 if(!isset($_COOKIE['color_1'])){
 	$_COOKIE['color_1'] = $color1;	
 }

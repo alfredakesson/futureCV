@@ -71,6 +71,7 @@
 				createCookie('layout','layout_1',1);
 
 			}
+
 			function changeColor2(){
 				changeColor();
 				document.getElementById('box_mini_id_2').style.borderColor="#541116";
