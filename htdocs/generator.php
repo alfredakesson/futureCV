@@ -1,5 +1,6 @@
 <?php
 	require 'php_fnc.php';
+
 ?>
 
 <!DOCTYPE html>
