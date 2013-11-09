@@ -172,7 +172,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
-						Background-image: <input id="useBG1" type="checkbox" name="useBG1" value="useBG1" class="color_box" onClick="showUpload(1);">
+						<input id="useBG1" type="checkbox" name="useBG1" value="useBG1" class="color_box" onClick="showUpload(1);">
 
 					</div>
 				
@@ -192,7 +192,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
-						Background-image: <input id="useBG2" type="checkbox" name="useBG2" value="useBG2" class="color_box" onClick="showUpload(2);">
+						<input id="useBG2" type="checkbox" name="useBG2" value="useBG2" class="color_box" onClick="showUpload(2);">
 					</div>
 
 					<div id="color_3" class="form_div" style= "background-color:<?php echo $_COOKIE['color_3']; ?>">
@@ -212,7 +212,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
-						Background-image: <input id="useBG3" type="checkbox" name="useBG3" value="useBG3" class="color_box" onClick="showUpload(3);">
+						<input id="useBG3" type="checkbox" name="useBG3" value="useBG3" class="color_box" onClick="showUpload(3);">
 
 					</div>
 	
@@ -235,7 +235,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
-						Background-image: <input id="useBG4" type="checkbox" name="useBG4" value="useBG4" class="color_box" onClick="showUpload(4);">
+						<input id="useBG4" type="checkbox" name="useBG4" value="useBG4" class="color_box" onClick="showUpload(4);">
 	
 					</div>
 			</div>
