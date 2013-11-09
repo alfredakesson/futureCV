@@ -148,7 +148,7 @@
 						<input id="name" type="text" name="name" onchange="changeName();" value="<?php if(isset($_COOKIE["name"])){echo $_COOKIE["name"];}else{echo "Name";} ?>">
 					</div>
 					
-					<div id="color_1" class="form_div" style= "background-color:<?php echo $color1; ?>">
+					<div id="color_1" class="form_div" style= "background-color:<?php echo $_COOKIE['color_1']; ?>">
 						
 						<textarea id="text1" rows="4" cols="50" name="text1" onchange="changeText(1);"><?php if(isset($_COOKIE["text1"])){echo $_COOKIE["text1"];} ?></textarea>
 						<p></p>
@@ -160,7 +160,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
 					</div>
 				
-					<div id="color_2" class="form_div" style= "background-color:<?php echo $color2; ?>">
+					<div id="color_2" class="form_div" style= "background-color:<?php echo $_COOKIE['color_2']; ?>">
 						
 						<textarea id="text2" rows="4" cols="50" name="text2" onchange="changeText(2);"><?php if(isset($_COOKIE["text2"])){echo $_COOKIE["text2"];} ?></textarea>
 						<p></p>
@@ -173,7 +173,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>	
 					</div>
 
-					<div id="color_3" class="form_div" style= "background-color:<?php echo $color3; ?>">
+					<div id="color_3" class="form_div" style= "background-color:<?php echo $_COOKIE['color_3']; ?>">
 						
 						<textarea id="text3" rows="4" cols="50" name="text3" onchange="changeText(3);"><?php if(isset($_COOKIE["text3"])){echo $_COOKIE["text3"];} ?></textarea>
 						<p></p>
@@ -184,7 +184,7 @@
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
 					</div>
 	
-					<div id="color_4" class="form_div" style= "background-color:<?php echo $color4; ?>">
+					<div id="color_4" class="form_div" style= "background-color:<?php echo $_COOKIE['color_4']; ?>">
 						
 						<textarea id="text4"rows="4" cols="50" name="text4" onchange="changeText(4);"><?php if(isset($_COOKIE["text4"])){echo $_COOKIE["text4"];} ?></textarea>
 						<p></p>
