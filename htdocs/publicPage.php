@@ -49,7 +49,7 @@ $file = str_replace("%%color3%%",$_COOKIE['color_3'],$file);
 $file = str_replace("%%color4%%",$_COOKIE['color_4'],$file);
 $length = 5;
 $randomString = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
-$filename = "/d/".$randomString.".html";
+$filename = "d/".$randomString.".html";
 file_put_contents($filename,$file);
 header("Location: /$filename");
 exit;
