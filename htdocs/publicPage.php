@@ -1,14 +1,26 @@
 <?php
 	require 'php_fnc.php';
-
+	
+if(!isset($_COOKIE['color_1'])){
+	$_COOKIE['color_1'] = $color1;	
+}
+if(!isset($_COOKIE['color_2'])){
+	$_COOKIE['color_1'] = $color2;
+}
+if(!isset($_COOKIE['color_3'])){
+	$_COOKIE['color_1'] = $color3;
+}
+if(!isset($_COOKIE['color_4'])){
+	$_COOKIE['color_1'] = $color4;
+}
 
 
 if($_COOKIE['layout'] == 'layout_1'){
-	$file = file_get_contents("tempEqSizeBox.html");
+	$file = file_get_contents("tempEqSizeBoxP.html");
 } else if($_COOKIE['layout'] == 'layout_3'){
-	$file = file_get_contents("tempVertSizeBox.html");
+	$file = file_get_contents("tempVertSizeBoxP.html");
 } else{
-	$file = file_get_contents("tempHorzSizeBox.html");
+	$file = file_get_contents("tempHorzSizeBoxP.html");
 }
 $file = str_replace("%%name%%",$_COOKIE["name"],$file);
 if (isset($_COOKIE["text1"])) {
@@ -37,12 +49,9 @@ $file = str_replace("%%color3%%",$_COOKIE['color_3'],$file);
 $file = str_replace("%%color4%%",$_COOKIE['color_4'],$file);
 $length = 5;
 $randomString = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
-$filename = $randomString.".html";
-if (false) {
-	file_put_contents($filename,$file);
-	header("Location: /$filename");
-	exit;
-}
-echo $file;
+$filename = "/d/".$randomString.".html";
+file_put_contents($filename,$file);
+header("Location: /$filename");
+exit;
 
 ?>
