@@ -84,12 +84,12 @@
 			}
 			function changeText (arg) {
 				var text = document.getElementById('text'.concat(arg)).value;
-				text = text.replace(/(\r\n|\n|\r)/gm,"");
+				text = text.replace(/(\r\n|\n|\r)/gm,"<br>");
 				createCookie('text'.concat(arg),text,1);
 			}
 			function changeName () {
 				var text = document.getElementById('name').value;
-				text = text.replace(/(\r\n|\n|\r)/gm,"");
+				text = text.replace(/(\r\n|\n|\r)/gm,"<br>");
 				createCookie('name',text,1);
 			}
 			function showUpload (arg){
