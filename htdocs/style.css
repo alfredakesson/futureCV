@@ -222,7 +222,13 @@ textarea {
 	border-color:black;
 	border-width: 1px;
 }
-
+.text_size
+{
+	padding-top: 0px;
+	color: black;
+	float:left;
+	margin-left: 5px;
+}
 
 .box_mini
 {
