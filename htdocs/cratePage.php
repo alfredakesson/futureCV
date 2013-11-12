@@ -1,6 +1,6 @@
 <?php
 	require 'php_fnc.php';
-
+$text_sizes = array(20,16,12);
 
 
 if($_COOKIE['layout'] == 'layout_1'){
@@ -54,6 +54,29 @@ if (isset($_COOKIE["upload4"]) && $_COOKIE["upload4"] != "none") {
 	$file = str_replace("%%upload4%%","upload/".$_COOKIE["upload4"],$file);
 }else{
 	$file = str_replace("%%upload4%%","",$file);
+}
+
+
+if (isset($_COOKIE["text_size1"])) {
+	$file = str_replace("%%text_size1%%",$text_sizes[intval($_COOKIE["text_size1"])-1],$file);
+}else{
+	$file = str_replace("%%text_size%%",12,$file);
+}
+
+if (isset($_COOKIE["text_size2"])) {
+	$file = str_replace("%%text_size2%%",$text_sizes[intval($_COOKIE["text_size2"])-1],$file);
+}else{
+	$file = str_replace("%%text_size2%%",12,$file);
+
+}if (isset($_COOKIE["text_size3"])) {
+	$file = str_replace("%%text_size3%%",$text_sizes[intval($_COOKIE["text_size3"])-1],$file);
+}else{
+	$file = str_replace("%%text_size3%%",12,$file);
+
+}if (isset($_COOKIE["text_size4"])) {
+	$file = str_replace("%%text_size4%%",$text_sizes[intval($_COOKIE["text_size4"])-1],$file);
+}else{
+	$file = str_replace("%%text_size4%%",12,$file);
 }
 
 
