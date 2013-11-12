@@ -121,7 +121,7 @@
 						<div id="color_11" class="square" style="background-color:<?php echo $_COOKIE['color_1']; ?>"></div>
 						<div id="color_21" class="square" style="background-color:<?php echo $_COOKIE['color_2']; ?>"></div>
 						<div id="color_31" class="square" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>
-						<div id="color_41" class="square" style="background-color:<?php echo $_COOKIE['color_4']; ?>"></div>
+						<div id="color_41" class="square" style="background-color:<?php echo $_COOKIE['color_4'] ?>"></div>
 					</div>
 				
 				
@@ -168,7 +168,7 @@
 						</form>
 
 						
-						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
+						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1'');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
@@ -231,13 +231,6 @@
 						<input type="submit" name="submit" value="Upload">
 						</form>
 
-
-
-						<div class="text_size_container">
-							<div class="choose_text_size" style="font-size:25px;">T</div>
-							<div class="choose_text_size" style="font-size:20px; top:5px;">T</div>
-							<div class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
-						</div>
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
