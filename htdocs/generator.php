@@ -173,20 +173,13 @@
 						<input type="file" name="file" id="file"><br>
 						<input type="submit" name="submit" value="Upload">
 						</form>
-<<<<<<< HEAD
-						<div>
-						<div id="text_size11" class="text_size" onClick="changeTextSize(1,1);"style="font-size: 12px;">T</div>
-						<div id="text_size12" class="text_size" onClick="changeTextSize(1,2);"style="font-size: 14px;">T</div>
-						<div id="text_size13" class="text_size" onClick="changeTextSize(1,3);"style="font-size: 16px;">T</div>
-						</div>
 
-=======
 						<div class="text_size_container">
 							<div id="text_size11" onClick="changeTextSize(1,1);" class="choose_text_size" style="font-size:25px;">T</div>
 							<div id="text_size12" onClick="changeTextSize(1,2);" class="choose_text_size" style="font-size:20px; top:5px;">T</div>
 							<div id="text_size13" onClick="changeTextSize(1,3);" class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
 						</div>
->>>>>>> ad09b9e7407ea88f0e5200dbbdf42f836216628d
+
 
 						
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
