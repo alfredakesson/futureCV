@@ -68,7 +68,7 @@
 				for (var i = 1; i <=3 ; i++) {
 					document.getElementById('text_size'.concat(box).concat(i)).style.color='black';
 				};
-				document.getElementById('text_size'.concat(box).concat(value)).style.color='green';
+				document.getElementById('text_size'.concat(box).concat(value)).style.color='gray';
 			}
 
 			/* CHANGE LAYOUT!!*/
