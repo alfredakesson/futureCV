@@ -29,7 +29,6 @@ background: linear-gradient(to bottom,  rgba(168,112,112,1) 0%,rgba(162,104,104,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a87070', endColorstr='#a46a6a',GradientType=0 ); /* IE6-9 */
 
 
-
 }
 
 
@@ -74,19 +73,6 @@ textarea {
 	padding-bottom: 20px;
 	text-align:center;
 	
-}
-
-.text_size_container{
-	padding:10px;
-}
-
-.choose_text_size
-{
-	float:left; 
-	color: black; 
-	padding-left: 10px;
-	margin:0;	
-	position:relative;
 }
 
 #content
@@ -236,13 +222,7 @@ textarea {
 	border-color:black;
 	border-width: 1px;
 }
-.text_size
-{
-	padding-top: 0px;
-	color: black;
-	float:left;
-	margin-left: 5px;
-}
+
 
 .box_mini
 {

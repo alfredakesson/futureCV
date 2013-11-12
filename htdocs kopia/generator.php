@@ -63,13 +63,6 @@
 				document.getElementById(arg2.concat(4)).style.backgroundColor=arg1;	
 				
 			}
-			function changeTextSize (box,value) {
-				createCookie('text_size'.concat(box),value);
-				for (var i = 1; i <=3 ; i++) {
-					document.getElementById('text_size'.concat(box).concat(i)).style.color='black';
-				};
-				document.getElementById('text_size'.concat(box).concat(value)).style.color='green';
-			}
 
 			/* CHANGE LAYOUT!!*/
 			function changeColor1(){
@@ -128,7 +121,7 @@
 						<div id="color_11" class="square" style="background-color:<?php echo $_COOKIE['color_1']; ?>"></div>
 						<div id="color_21" class="square" style="background-color:<?php echo $_COOKIE['color_2']; ?>"></div>
 						<div id="color_31" class="square" style="background-color:<?php echo $_COOKIE['color_3']; ?>"></div>
-						<div id="color_41" class="square" style="background-color:<?php echo $_COOKIE['color_4']; ?>"></div>
+						<div id="color_41" class="square" style="background-color:<?php echo $_COOKIE['color_4'] ?>"></div>
 					</div>
 				
 				
@@ -164,7 +157,7 @@
 					
 					<div id="color_1" class="form_div" style= "background-color:<?php echo $_COOKIE['color_1']; ?>">
 						
-						<textarea id="text1" rows="4" cols="50" name="text1" onchange="changeText(1);"><?php if(isset($_COOKIE["text1"])){echo str_replace("<br>","\n",$_COOKIE["text1"]);} ?></textarea>
+						<textarea id="text1" rows="4" cols="50" name="text1" onchange="changeText(1);"><?php if(isset($_COOKIE["text1"])){echo $_COOKIE["text1"];} ?></textarea>
 						<p></p>
 						<form id="upload1" action="generator.php" method="post"
 						enctype="multipart/form-data" style = "display:none;">
@@ -173,18 +166,9 @@
 						<input type="file" name="file" id="file"><br>
 						<input type="submit" name="submit" value="Upload">
 						</form>
-<<<<<<< HEAD
-						<div>
-						<div id="text_size11" class="text_size" onClick="changeTextSize(1,1);"style="font-size: 12px;">T</div>
-						<div id="text_size12" class="text_size" onClick="changeTextSize(1,2);"style="font-size: 14px;">T</div>
-						<div id="text_size13" class="text_size" onClick="changeTextSize(1,3);"style="font-size: 16px;">T</div>
-						</div>
-						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1'');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
-=======
 
 						
-						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
->>>>>>> 25927ff315c21abe439fb34a889460d3f58ccd06
+						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1'');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
@@ -194,7 +178,7 @@
 				
 					<div id="color_2" class="form_div" style= "background-color:<?php echo $_COOKIE['color_2']; ?>">
 						
-						<textarea id="text2" rows="4" cols="50" name="text2" onchange="changeText(2);"><?php if(isset($_COOKIE["text2"])){echo str_replace("<br>","\n",$_COOKIE["text2"]);} ?></textarea>
+						<textarea id="text2" rows="4" cols="50" name="text2" onchange="changeText(2);"><?php if(isset($_COOKIE["text2"])){echo $_COOKIE["text2"];} ?></textarea>
 						<p></p>
 						<form id="upload2" action="generator.php" method="post"
 						enctype="multipart/form-data" style = "display:none;">
@@ -213,7 +197,7 @@
 
 					<div id="color_3" class="form_div" style= "background-color:<?php echo $_COOKIE['color_3']; ?>">
 						
-						<textarea id="text3" rows="4" cols="50" name="text3" onchange="changeText(3);"><?php if(isset($_COOKIE["text3"])){echo str_replace("<br>","\n",$_COOKIE["text3"]);} ?></textarea>
+						<textarea id="text3" rows="4" cols="50" name="text3" onchange="changeText(3);"><?php if(isset($_COOKIE["text3"])){echo $_COOKIE["text3"];} ?></textarea>
 						<p></p>
 
 						<form id="upload3" action="generator.php" method="post"
@@ -234,7 +218,7 @@
 	
 					<div id="color_4" class="form_div" style= "background-color:<?php echo $_COOKIE['color_4']; ?>">
 						
-						<textarea id="text4"rows="4" cols="50" name="text4" onchange="changeText(4);"><?php if(isset($_COOKIE["text4"])){echo str_replace("<br>","\n",$_COOKIE["text4"]);} ?></textarea>
+						<textarea id="text4"rows="4" cols="50" name="text4" onchange="changeText(4);"><?php if(isset($_COOKIE["text4"])){echo $_COOKIE["text4"];} ?></textarea>
 						<p></p>
 
 						<p></p>
@@ -247,13 +231,6 @@
 						<input type="submit" name="submit" value="Upload">
 						</form>
 
-
-
-						<div class="text_size_container">
-							<div class="choose_text_size" style="font-size:25px;">T</div>
-							<div class="choose_text_size" style="font-size:20px; top:5px;">T</div>
-							<div class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
-						</div>
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
