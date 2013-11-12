@@ -173,18 +173,15 @@
 						<input type="file" name="file" id="file"><br>
 						<input type="submit" name="submit" value="Upload">
 						</form>
-<<<<<<< HEAD
 						<div>
 						<div id="text_size11" class="text_size" onClick="changeTextSize(1,1);"style="font-size: 12px;">T</div>
 						<div id="text_size12" class="text_size" onClick="changeTextSize(1,2);"style="font-size: 14px;">T</div>
 						<div id="text_size13" class="text_size" onClick="changeTextSize(1,3);"style="font-size: 16px;">T</div>
 						</div>
-						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1'');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
-=======
+
 
 						
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
->>>>>>> 25927ff315c21abe439fb34a889460d3f58ccd06
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
