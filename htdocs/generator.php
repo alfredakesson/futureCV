@@ -173,18 +173,14 @@
 						<input type="file" name="file" id="file"><br>
 						<input type="submit" name="submit" value="Upload">
 						</form>
-<<<<<<< HEAD
-						<div>
-						<div id="text_size11" class="text_size" onClick="changeTextSize(1,1);"style="font-size: 12px;">T</div>
-						<div id="text_size12" class="text_size" onClick="changeTextSize(1,2);"style="font-size: 14px;">T</div>
-						<div id="text_size13" class="text_size" onClick="changeTextSize(1,3);"style="font-size: 16px;">T</div>
+						<div class="text_size_container">
+							<div id="text_size11" onClick="changeTextSize(1,1);" class="choose_text_size" style="font-size:25px;">T</div>
+							<div id="text_size12" onClick="changeTextSize(1,2);" class="choose_text_size" style="font-size:20px; top:5px;">T</div>
+							<div id="text_size13" onClick="changeTextSize(1,3);" class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
 						</div>
-						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1'');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
-=======
 
 						
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
->>>>>>> 25927ff315c21abe439fb34a889460d3f58ccd06
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color3;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color3; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color4;?>', 'color_1');" class="color_box" style="background-color:<?php echo $color4; ?>"></div>
@@ -203,6 +199,12 @@
 						<input type="file" name="file" id="file"><br>
 						<input type="submit" name="submit" value="Upload">
 						</form>
+
+						<div class="text_size_container">
+							<div id="text_size21" onClick="changeTextSize(2,1);" class="choose_text_size" style="font-size:25px;">T</div>
+							<div id="text_size22" onClick="changeTextSize(2,2);" class="choose_text_size" style="font-size:20px; top:5px;">T</div>
+							<div id="text_size23" onClick="changeTextSize(2,3);" class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
+						</div>
 
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_2');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
@@ -223,6 +225,12 @@
 						<input type="file" name="file" id="file"><br>
 						<input type="submit" name="submit" value="Upload">
 						</form>
+
+						<div class="text_size_container">
+							<div id="text_size31" onClick="changeTextSize(3,1);" class="choose_text_size" style="font-size:25px;">T</div>
+							<div id="text_size32" onClick="changeTextSize(3,2);" class="choose_text_size" style="font-size:20px; top:5px;">T</div>
+							<div id="text_size33" onClick="changeTextSize(3,3);" class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
+						</div>
 
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_3');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
@@ -248,11 +256,10 @@
 						</form>
 
 
-
 						<div class="text_size_container">
-							<div class="choose_text_size" style="font-size:25px;">T</div>
-							<div class="choose_text_size" style="font-size:20px; top:5px;">T</div>
-							<div class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
+							<div id="text_size41" onClick="changeTextSize(4,1);" class="choose_text_size" style="font-size:25px;">T</div>
+							<div id="text_size42" onClick="changeTextSize(4,2);" class="choose_text_size" style="font-size:20px; top:5px;">T</div>
+							<div id="text_size43" onClick="changeTextSize(4,3);" class="choose_text_size" style="font-size:15px; top: 10px;">T</div>
 						</div>
 						<div onClick="changeColorOnBox('<?php echo $color1;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color1; ?>"></div>
 						<div onClick="changeColorOnBox('<?php echo $color2;?>', 'color_4');" class="color_box" style="background-color:<?php echo $color2; ?>"></div>
