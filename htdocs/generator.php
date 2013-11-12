@@ -145,7 +145,7 @@
 
 			</div>
 			
-			<h1 style="margin-top: 0px; margin-bottom:50px;">Step 2: <font color="#808080">Fill your boxes!</font></h1>
+			<h1 style="margin-top: 0px; margin-bottom:50px;">Step 2: <font color="#808080">Fill out the boxes!</font></h1>
 
 			<div id="form_box">
 				
